@@ -21,7 +21,6 @@ body {
     margin: auto;
     width: 30vw;
     height: auto;
-    background-color: rgb(247, 241, 241);
     border: 1px solid black;
     border-radius: .4rem;
     background-color: rgb(206, 96, 105); 
@@ -72,5 +71,41 @@ background-color: rgb(51, 51, 199);
 }
 .todo-item {
     background-color: rgb(198, 229, 240);
-    margin-bottom: .4rem;
+    border: 1px solid rgb(247, 211, 9);
+    border-radius: .2rem;
+    margin-bottom: 1rem;
+}
+.todo-item .delete-button {
+    display: none;
+    
+}
+.todo-item:hover .delete-button {
+    display: block;
+    background-color: rgb(51, 51, 199);
+    border: 1px solid rgb(247, 211, 9);
+    width: 15%;
+    border-radius: .2rem;
+    float: right;
+    text-align: center; 
+}
+.todo__footer {
+    padding: 1rem;
+    font-size: .8rem;
+    color: rgb(109, 107, 107);
+}
+.footer__btn--complete {
+    border:1px solid rgba(107, 104, 104, 1);
+    padding: .3rem;
+    background-color: rgb(247, 231, 6);
+    width: 40%;
+    border-radius: .2rem;
+    float: left;
+}
+.footer__btn--clear {
+    border:1px solid rgba(107, 104, 104, 1);
+    padding: .3rem;
+    background-color: rgb(247, 231, 6);
+    width: 20%;
+    border-radius: .2rem;
+    float: right;
 }
